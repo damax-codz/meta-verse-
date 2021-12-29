@@ -1,4 +1,4 @@
-# meta-verse-project :meta
+# meta-verse-project 
 meta verse project is a project i created in reference to the new 
 changes made by mark zuckerberg, so i decided to make a website to help people 
 get access to the meta-verse 
@@ -26,4 +26,4 @@ due to its complexity i had to remove some images for the mobile
 view so as to make it responsive to all devices 
 
 ### biggest takeaway 
-- learning ow to validate a form 
+- learning how to validate a form 
