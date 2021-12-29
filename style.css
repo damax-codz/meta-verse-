@@ -1,0 +1,360 @@
+ body{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   margin: 0;
+   background-image: url("blue-back.jpg");
+   background-size: cover;
+}
+.anitext{
+    font-size: 30px;
+    text-transform: capitalize ;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    animation: texttrans 2s linear;
+   
+}
+@keyframes texttrans {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    50%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+}
+.anivid{
+
+    animation: vidtrans 2.5s linear;
+   
+}
+@keyframes vidtrans {
+    0%{
+        opacity: 0;
+      
+    }
+    50%{
+        opacity: 0.5;
+    }
+
+    
+}
+.menu-toggle{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 0%;
+    transition: width 1s;
+    height: 100vh;
+}
+.menu-toggle >li{
+    cursor: pointer;
+}
+.menu-toggle a{
+    text-decoration: none;
+    color: black;
+}
+.menu-toggle a:hover{
+    color: blue;
+    transition: color 1.5s;
+}
+.items{
+    width: 40%;
+    visibility: hidden;
+    height: 100vh;
+    background-color: white;
+    overflow-y: scroll;
+}
+ul{
+    list-style-type:none ;
+}
+
+.list{
+    margin-top: 50px;
+    font-weight: bolder;
+    margin-left: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.page{
+    position: absolute;
+    background-color: rgb(251, 251, 251);
+    width: 95%;
+    height: 90vh;
+    align-self: center;
+    box-shadow: 1px 1px 7px 4px rgba(92, 92, 92, 0.267),-1px -1px 7px 4px rgba(131, 126, 126, 0.068);
+    border-radius: 5px;
+}
+.firstpage{
+    height: 90vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+}
+.header .links{
+display: flex;
+justify-content: space-evenly;
+width: 50%;
+margin-top: 10px;
+
+}
+
+.header .links a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 1;
+    font-weight: bolder;
+}
+.header .links a:hover{
+
+    color: blue;
+    transition: color 1.5s ;
+}
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin-top: 70px;
+    padding-left: 20px;
+}
+.welcome-text .meta{
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+}
+.welcome-text .lorem{
+    margin-bottom: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.welcome-text >button{
+    width: 100px;
+    height: 25px;
+    color: white;
+    background-color: rgb(5, 5, 53);
+    border-radius: 10px;
+    border: 1px solid rgb(5, 5, 53);
+}
+.contain{
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+}
+.second-container{
+    margin-top: 50px;
+    height: 70vh;
+    width: 50vw;
+}
+.second-container .boxone{
+    width: 400px;
+    height: 210px;
+    background-color: rgba(100, 148, 237, 0.363);
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 50px;
+
+}
+.second-container .boxtwo{
+    width: 350px;
+    height: 250px;
+    background-color:cornflowerblue;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.imageee{
+    position: absolute;
+    width: 350px;
+    height: 230px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.member{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin-top: 100px;
+}
+.containerr{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    margin-bottom:30px ;
+ }
+ .pagee{
+     position: absolute;
+     background-color: rgba(236, 234, 234, 0.246);
+     height: 90vh;
+     align-self: center;
+     border-radius: 5px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 100%;
+  
+ }
+ .social{
+     display: flex;
+     flex-direction: column;
+     width: 150px;
+     height: 120px;
+     box-shadow: 1px 1px 7px 4px rgba(92, 92, 92, 0.267);
+     padding: 20px;
+     border-radius: 40px;
+     margin: 5px;
+     background-color: white;
+     cursor: pointer;
+     transition:1.5s;
+ }
+ .social:hover{
+    background-color: rgb(158, 156, 156);
+}
+ .row-one{
+     display: flex;
+
+
+ }
+ .row-two{
+     display: flex;
+ }
+ .row-three{
+    display: flex;
+}
+ .icons{
+     width: 30px;
+     height: 30px;
+     margin-bottom: 15px
+ }
+ .apps{
+     margin-bottom: 15px;
+
+ }
+ .not{
+     color: rgba(56, 54, 54, 0.774);
+ }
+ .third-container{
+     /* margin-left: 10px; */
+     width: 100%;
+ }
+.become{
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.menu{
+    display: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.meta-image{
+    height: 450px;
+    width:350px;
+    transform: translateY(-100px);
+}
+hr{
+    margin-top: 15px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.144);
+    border-color:rgba(0, 0, 0, 0.144);
+    margin-left: 10px;
+}
+.mencon{
+    width: 30px;
+    height: 30px;
+    color: black;
+}
+.last-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 50px 0px;
+    width: 100%;
+}
+.review{
+    font-size: 35px;
+    margin-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+video{
+    width: 80%;
+    max-height: 100%;
+    margin-top: 20px;
+
+}
+.meta-vid{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width:800px) {
+    .header .links a{display: none;}
+    .welcome-text{width: 40vw;margin-top: 30px;}
+    .welcome-text .meta{font-size: 20px;margin-bottom: 20px;}
+    .meta-image{width: 250px;height: 300px;}
+    .second-container .boxone{width: 250px;height: 200px;}
+    .second-container .boxtwo{width: 200px;height: 240px;}
+    .imageee{width: 200px;height: 220px;}
+    .become{font-size: 20px;}
+    .member{width: 40vw;}
+    .social{width: 100px;height: 100px;}
+    .page{height: 80vh;}
+    .container{height: 90vh;}
+    .pagee{height: 70vh;}
+    .containerr{height: 50vh;}
+    .menu{display: flex;}
+    .meta-image{transform: translateY(-1px);display: none;}
+    .review{margin-top: 70px;}
+    .last-container{margin-top: 150px;}
+}
+@media (max-width:500px) {
+    .welcome-text{width: 50vw;}
+    .meta-image{width: 200px;display: flex;}
+    .second-container .boxone{width: 200px;height: 200px;margin-left: 0px;}
+    .second-container .boxtwo{width: 150px;height: 240px;margin-left: 50px;}
+    .imageee{width: 150px;height: 220px;}
+    .social{width: 120px;height: 120px;}
+    .items{width: 50%;}
+    .list{margin-left: 10px;}
+    .row-one{display: flex;}
+    .row-two{display: flex;}
+    .row-three{display: flex;}
+    .container{height: 70vh;}
+    .page{height: 60vh;}
+    .last-container{margin-top: 50px}
+}
+@media (max-width:380px) {
+    .container{width: 100%;}
+    .meta{font-size: 15px !important;}
+    .third-container{margin-top: 30px;}
+    .member{padding-left: 20px;}
+    .welcome-text{margin-top: 30px;}
+    .second-container .boxone{width: 150px;height: 200px;margin-left: 0px;}
+    .second-container .boxtwo{width: 100px;height: 240px;margin-left: 50px;}
+    .imageee{width: 100px;height: 220px;}
+    .member{margin-top: 50px;}
+}

@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("blue-back.jpg");
+    position: absolute;
+}
+.container{
+    width: 90%;
+    height:90vh ;
+    border-radius: 15px;
+    box-shadow: 0.5px 0.5px 7px 4px rgba(92, 92, 92, 0.267),-0.5px -0.5px 7px 4px rgba(131, 126, 126, 0.068);
+    display: flex;
+    margin-top: 10px;
+    background-color: white;
+}
+.images{
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.metaimg{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.register-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+   
+}
+.form{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+form{
+    margin-top: 30px;
+}
+input{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-right: none;
+    border-left:none;
+    border-top: none;
+    width: 250px;
+    border-color: rgba(0, 0, 0, 0.328);
+    background-color: rgba(0, 0, 0, 0);
+}
+#email{
+
+    animation: emailmation 3s ease-in;
+}
+@keyframes emailmation {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+#password{
+
+    animation: passmation 4s ease-out;
+}
+@keyframes passmation {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+i{
+    animation:iconm 5s ease-in ;
+}
+@keyframes iconm {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.1;
+    }
+    80%{
+        opacity: 0.5;
+    }
+}
+label{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.regnow{
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+}
+.reg{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.552);
+    font-family: 'Ubuntu', sans-serif;
+}
+.submit{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(139, 174, 255);
+    border-color: rgb(139, 174, 255);
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.account{
+    font-size: 13px;
+    margin-top: 5px;
+}
+.account >a{
+    color: rgb(172, 3, 187);
+    cursor: pointer;
+}
+@media (max-width:750px) {
+    .images{width: 0%;}
+    .container{width: 90%;height: 90vh;margin-top: 30px;}
+    .regnow{font-size: 30px;}
+    .reg{font-size: 15px;}
+    .form{width: 100%;}
+    input{width: 200px;}
+    .account{margin-top: 20px;}
+ 
+}
+@media (max-width:500px) {
+    .container{width: 90%;height: 70vh;margin-top: 50px;}
+    .account{margin-top: 20px;}
+}

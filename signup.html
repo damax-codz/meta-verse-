@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta-Verse signup page</title>
+    <link rel="shortcut icon" type="image/jpg" href="meta.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/3e330e8926.js" crossorigin="anonymous"></script>
+    <script src="meta.js"></script>
+</head>
+<body onload="typeWriter()">
+   
+    <div class="container">
+    <div class="images">
+        <img src="meta login image.jpg" class="metaimg">
+    </div>
+    <div class="form">
+    <div class="register-form">
+        <p id="regnow">
+        </p>
+        <p class="reg">Get started with your free account</p>
+    <form>
+        <label for="username">Username:</label><br>
+        <i class="far fa-user"></i>
+        <input type="text" id="username" required><br>
+        <label for="email">Email:</label><br>
+        <i class="far fa-envelope"></i>
+        <input type="email" id="email"required><br>
+        <p class="emailconfirm" style="color: red;"></p>
+        <label for="password">Password:</label><br>
+        <i class="fas fa-key"></i>
+        <input type="password" id="password"  required>
+       <p class="passwordconfirm" style="color: red;"></p>
+    </form>
+    <a class="linked"><button class="submit" onclick="confirm()" >Submit  <i class="fas fa-long-arrow-alt-right"></i></button></a>
+    <p class="account">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+    </div>
+    </div>
+    <p class="ssn"></p>
+</body>
+
+<script>
+    var i = 0;
+    var txt = 'Register now !';
+    var speed = 100;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+          document.getElementById("regnow").innerHTML += txt.charAt(i);
+          setTimeout(typeWriter, speed);
+          i++;
+      }
+    }
+    </script>
+</html>
